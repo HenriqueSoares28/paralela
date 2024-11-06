@@ -112,7 +112,7 @@ int main() {
     kmeans_parallel(points, labels, centroids);
     double end = omp_get_wtime();
 
-    printf("Tempo de execução (paralelo): %f segundos\n", end - start);
+    printf("Tempo de execução: %f segundos\n", end - start);
 
     // Libera a memória
     free(points);
